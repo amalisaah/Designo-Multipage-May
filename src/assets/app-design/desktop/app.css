@@ -358,4 +358,42 @@ hr {
     width: 100%;
 }
 
+@media only screen and (max-width:770px) {
+    .wrapper{
+    /* background-color: var(--dark-grey); */
+    padding: 2.5rem 5rem 0rem 5rem;
+    display: grid;
+    grid-gap: 4rem;
+}
 
+/* App Design Section Styling */
+.app-design {
+    background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: 75rem 50rem;
+    background-position:220% 50%;
+    background-repeat:no-repeat;
+    background-color: var(--primary);
+    display: grid;
+    height: 30rem;
+    width: 95%;
+    border-radius: 1rem;
+    text-align: center;
+    align-items:center;
+}
+
+.app{
+    color: var(--light);
+}
+
+.app h2{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.app p{
+  position: relative;
+  /* bottom: 1.5rem; */
+  line-height: 1.7rem;
+  font-size: 1.5rem;
+}
+}
