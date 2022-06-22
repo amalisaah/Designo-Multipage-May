@@ -1,0 +1,45 @@
+:root {
+ --primary: #E7816B;
+ --primary-light: #FFAD9B;
+ --dark: #1D1C1E;
+ --dark-grey: #333136;
+ --light: #FFFFFF;
+ --light-grey: #F1F3F5;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Jost;
+    color: var(--dark);
+}
+
+body{
+    /* background-color: var(--light-grey); */
+}
+
+.wrapper{
+    background-color: var(--dark-grey);
+    padding: 2.5rem 5rem 0rem 5rem;
+}
+
+/* Nav-Bar Styling */
+.navbar {
+    background-color: var(--light);
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+}
+
+.navbar img{
+    width: 12rem;
+    height: 1.5rem;
+}
+
+.nav-selection{
+    /* background-color:#E7816B; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8em;
+    width: 20rem;
+    justify-items: end;
+}
