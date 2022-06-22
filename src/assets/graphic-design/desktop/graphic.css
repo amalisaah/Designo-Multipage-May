@@ -62,7 +62,7 @@ a:hover{
 }
 
 /* App Design Section Styling */
-.app-design {
+.graphic-design {
     background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
     background-size: 50rem 30rem;
     background-position:15% 50%;
@@ -75,16 +75,16 @@ a:hover{
     align-items:center;
 }
 
-.app{
+.graphic{
     color: var(--light);
 }
 
-.app h2{
+.graphic h2{
     font-size: 3rem;
     font-weight: 400;
 }
 
-.app p{
+.graphic p{
   position: relative;
   /* bottom: 1.5rem; */
   line-height: 1.7rem;
@@ -141,7 +141,7 @@ a:hover{
 }
 
 /* Web Graphic Section styling */
-.web-graphic{
+.app-web{
     /* background-color:white; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -153,6 +153,46 @@ a:hover{
 }
 
 /* Web Style */
+.app-left{
+    background-color:rgba(0, 0, 0, 0.708);
+    background-blend-mode: overlay;
+    background-image: url(/src/assets/home/desktop/image-app-design.jpg);
+    background-size: contain;
+    height: 19rem;
+    display: grid;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.app-details h3{
+    /* background-color:blue; */
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.app-view{
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+.app-view  h6{
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.app-view svg{
+    /* background-color:#1D1C1E; */
+    position: relative;
+    right: 1.5rem;
+}
+
+/* Graphic style */
 .web{
     background-color:rgba(0, 0, 0, 0.708);
     background-blend-mode: overlay;
@@ -189,47 +229,7 @@ a:hover{
 .web-view svg{
     /* background-color:#1D1C1E; */
     position: relative;
-    right: 2rem;
-}
-
-/* Graphic style */
-.graphic{
-    background-color:rgba(0, 0, 0, 0.708);
-    background-blend-mode: overlay;
-    background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
-    background-size: contain;
-    height: 19rem;
-    display: grid;
-    align-items: center;
-    border-radius: 1rem;
-    justify-content: center;
-}
-
-.graphic-details h3{
-    /* background-color:blue; */
-    font-size: 3rem;
-    font-weight: 400;
-}
-
-.graphic-view{
-    /* background-color:#F1F3F5; */
-    display: grid;
-    grid-template-columns: 3fr 0.5fr;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-}
-
-.graphic-view  h6{
-    font-size: 0.68rem;
-    font-weight: 400;
-    letter-spacing: 0.5rem;
-}
-
-.graphic-view svg{
-    /* background-color:#1D1C1E; */
-    position: relative;
-    right: 5rem;
+    right:1.5rem;
 }
 
 /* Get In Touch Section */
