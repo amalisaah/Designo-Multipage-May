@@ -154,10 +154,10 @@ a:hover{
 
 /* Web Style */
 .app-left{
-    background-color:rgba(0, 0, 0, 0.708);
+    background-color:rgba(0, 0, 0, 0.514);
     background-blend-mode: overlay;
     background-image: url(/src/assets/home/desktop/image-app-design.jpg);
-    background-size: contain;
+    background-size: cover;
     height: 19rem;
     display: grid;
     align-items: center;
