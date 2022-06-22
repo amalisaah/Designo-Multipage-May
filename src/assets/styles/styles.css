@@ -8,3 +8,9 @@
     --white: hsl(0, 0%, 100%);
     --light-gray: hsl(210, 17%, 95%);
 }
+
+
+html,
+body {
+    overflow-x: hidden;
+}
