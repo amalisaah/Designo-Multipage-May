@@ -20,6 +20,10 @@ html {
 
 body{
     /* background-color: var(--light-grey); */
+    background-image: url(/src/assets/shared/desktop/bg-pattern-leaf.svg);
+    background-size: 50rem 30rem;
+    background-position:0% 10%;
+    background-repeat: no-repeat;
 }
 
 .wrapper{
@@ -53,8 +57,16 @@ body{
     right: 0.1rem;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 /* App Design Section Styling */
 .app-design {
+    background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: 50rem 30rem;
+    background-position:15% 50%;
+    background-repeat:no-repeat;
     background-color: var(--primary);
     display: grid;
     height: 15rem;
@@ -86,23 +98,24 @@ body{
     position: relative;
     top: 4rem;
     text-align: center;
-    grid-gap: 4.2rem;
+    grid-gap: 4rem;
+    width: 100%;
 }
 
 .card{
      background-color: #FDF3F0;
-     width: 22rem;
+     width: 26rem;
      border-radius: 1.2rem;
      height: 30rem;
 }
 
 .card img{
-    width: 22rem;
+    width: 26rem;
     height: 20rem;
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.card h3{
+.card-message h3{
     font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
@@ -114,6 +127,17 @@ body{
 .card p{
     position: relative;
     top: 1.7rem;
+}
+
+/* Card Hover */
+.card:hover {
+     background-color: var(--primary);
+    color: var(--light);
+}
+
+.card:hover h3{
+     background-color: var(--primary);
+    color: var(--light);
 }
 
 /* Web Graphic Section styling */
@@ -133,7 +157,7 @@ body{
     background-color:rgba(0, 0, 0, 0.708);
     background-blend-mode: overlay;
     background-image: url(/src/assets/home/desktop/image-web-design-small.jpg);
-    background-repeat: no-repeat;
+    background-size: contain;
     height: 19rem;
     display: grid;
     align-items: center;
@@ -173,7 +197,7 @@ body{
     background-color:rgba(0, 0, 0, 0.708);
     background-blend-mode: overlay;
     background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
-    background-repeat: no-repeat;
+    background-size: contain;
     height: 19rem;
     display: grid;
     align-items: center;
@@ -210,6 +234,10 @@ body{
 
 /* Get In Touch Section */
 .get-in-touch {
+    background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: 50rem 30rem;
+    background-position:100% 50%;
+    background-repeat: no-repeat;
     background-color: var(--primary);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -255,6 +283,12 @@ button {
     left: 2.4rem;
 }
 
+/* button hover */
+button:hover{
+    background-color: var(--primary-light);
+    color: var(--light);
+}
+
 /* Footer Styling */
 .footer {
     /* background-color:blue; */
@@ -268,7 +302,7 @@ button {
 }
 
 .details{
-    /* background-color:black; */
+    /* background-color:rgb(22, 182, 62); */
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     align-items: end;
@@ -283,13 +317,19 @@ button {
     width: 10rem;
     position:relative;
     bottom: 1rem;
-    left: 4.65rem;
+    left: 7.2rem;
+}
+
+/* Social media icons Hover */
+svg:hover path{
+    cursor: pointer;
+    fill: var(--primary-light);
 }
 
 .location{
     font-size: 0.8rem;
     font-weight: 800;
-    color: var(--light-grey)
+    color: var(--light-grey);
 }
 
 .loc-details{
