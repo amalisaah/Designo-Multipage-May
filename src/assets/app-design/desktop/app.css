@@ -365,7 +365,29 @@ hr {
     display: grid;
     grid-gap: 4rem;
 }
+/* Nav-Bar Styling */
+.navbar {
+    /* background-color: var(--light); */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
 
+.navbar img{
+    width: 17rem;
+    height: 2rem;
+}
+
+.nav-selection{
+    /* background-color:#E7816B; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.4em;
+    width: 30rem;
+    justify-items: end;
+    position: relative;
+    right: 4.5rem;
+}
 /* App Design Section Styling */
 .app-design {
     background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
@@ -374,7 +396,7 @@ hr {
     background-repeat:no-repeat;
     background-color: var(--primary);
     display: grid;
-    height: 30rem;
+    height: 35rem;
     width: 95%;
     border-radius: 1rem;
     text-align: center;
@@ -395,5 +417,57 @@ hr {
   /* bottom: 1.5rem; */
   line-height: 1.7rem;
   font-size: 1.5rem;
+}
+
+/* Card Section Styling */
+.card-section {
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    grid-gap: 4rem;
+    width: 80%;
+}
+
+.card{
+     background-color: #FDF3F0;
+     min-width: 100rem;
+     border-radius: 1.2rem;
+     height: 40rem;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+
+.card img{
+    width: 45rem;
+    height: 40rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.card-message h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    color: var(--primary);
+    position: relative;
+    top: 1rem;
+}
+
+.card p{
+    position: relative;
+    top: 1.7rem;
+}
+
+/* Card Hover */
+.card:hover {
+     background-color: var(--primary);
+    color: var(--light);
+}
+
+.card:hover h3{
+     background-color: var(--primary);
+    color: var(--light);
 }
 }
