@@ -18,7 +18,7 @@ body{
 }
 
 .wrapper{
-    background-color: var(--dark-grey);
+    /* background-color: var(--dark-grey); */
     padding: 2.5rem 5rem 0rem 5rem;
     display: grid;
     grid-gap: 4rem;
@@ -73,12 +73,13 @@ body{
 
 /* Card Section Styling */
 .card-section {
+    /* background-color:#F1F3F5; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     position: relative;
     top: 4rem;
     text-align: center;
-    grid-gap: 1.5rem;
+    grid-gap: 3.7rem;
 }
 
 .card{
@@ -99,4 +100,98 @@ body{
     font-weight: 400;
     letter-spacing: 0.5rem;
     color: var(--primary);
+}
+
+/* Web Graphic Section styling */
+.web-graphic{
+    /* background-color:white; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    top: 8rem;
+    color: var(--light);
+    text-align: center;
+    grid-gap: 5.7rem;
+}
+
+/* Web Style */
+.web{
+    background-color:rgba(0, 0, 0, 0.708);
+    background-blend-mode: overlay;
+    background-image: url(/src/assets/home/desktop/image-web-design-small.jpg);
+    background-repeat: no-repeat;
+    height: 19rem;
+    display: grid;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.web-details h3{
+    /* background-color:blue; */
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.web-view{
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    bottom: 3rem;
+}
+
+.web-view  h6{
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.web-view svg{
+    /* background-color:#1D1C1E; */
+    position: relative;
+    right: 2rem;
+}
+
+/* Graphic style */
+.graphic{
+    background-color:rgba(0, 0, 0, 0.708);
+    background-blend-mode: overlay;
+    background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    height: 19rem;
+    display: grid;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.graphic-details h3{
+    /* background-color:blue; */
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.graphic-view{
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    bottom: 3rem;
+}
+
+.graphic-view  h6{
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.graphic-view svg{
+    /* background-color:#1D1C1E; */
+    position: relative;
+    right: 5rem;
 }
