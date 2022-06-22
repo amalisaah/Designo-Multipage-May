@@ -70,3 +70,33 @@ body{
   bottom: 1.5rem;
   line-height: 1.7rem;
 }
+
+/* Card Section Styling */
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    grid-gap: 1.5rem;
+}
+
+.card{
+     background-color: #FDF3F0;
+     width: 22rem;
+     border-radius: 1.2rem;
+     height: 30rem;
+}
+
+.card img{
+    width: 22rem;
+    height: 20rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    color: var(--primary);
+}
