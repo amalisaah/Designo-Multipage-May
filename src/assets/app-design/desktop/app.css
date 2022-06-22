@@ -20,6 +20,8 @@ body{
 .wrapper{
     background-color: var(--dark-grey);
     padding: 2.5rem 5rem 0rem 5rem;
+    display: grid;
+    grid-gap: 4rem;
 }
 
 /* Nav-Bar Styling */
@@ -42,4 +44,29 @@ body{
     font-size: 0.8em;
     width: 20rem;
     justify-items: end;
+}
+
+/* App Design Section Styling */
+.app-design {
+    background-color: var(--primary);
+    display: grid;
+    height: 15rem;
+    border-radius: 1rem;
+    text-align: center;
+    align-items:center;
+}
+
+.app{
+    color: var(--light);
+}
+
+.app h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.app p{
+  position: relative;
+  bottom: 1.5rem;
+  line-height: 1.7rem;
 }
