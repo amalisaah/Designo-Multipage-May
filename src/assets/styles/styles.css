@@ -19,3 +19,152 @@
     list-style: none;
     text-decoration: none;
 }
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    display: table-cell;
+
+    text-decoration: none;
+    color: initial;
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+.container {
+    width: 1111px;
+    margin: 0 auto;
+}
+
+
+nav {
+    margin-top: 64px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 196px;
+    height: 24px;
+}
+
+
+h1 {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+p {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    height: 14px;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    margin-left: 42px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
+
+
+.card {
+    margin-top: 67px;
+    height: 640px;
+    background-color: var(--peach);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__hero {
+    color: #fff;
+    width: 540px;
+    height: 350px;
+    padding-left: 95px;
+    padding-top: 145px;
+}
+
+.card__title {
+    width: 540px;
+    height: 165px;
+}
+
+.card__description {
+    margin-top: 11px;
+}
+
+.card__btn {
+    margin-top: 40px;
+}
+
+
+.card__image {
+    position: absolute;
+    left: 570px;
+    top: -30px;
+    overflow: hidden;
+}
+
+
+.card::after {
+    content: url(/Designo-multi-page-website-main/assets/home/desktop/bg-pattern-hero-home.svg);
+    position: absolute;
+    width: 1110px;
+    height: 640px;
+    left: 465px;
+    top: 0px;
+}
+
+.grid__container {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 30px;
+    margin-bottom: 135px;
+    grid-template-areas:
+        "Web-design__projects app-design__projects"
+        "Web-design__projects graphic-design__projects";
+}
+
+.web-design__projects {
+    grid-area: Web-design__projects;
+    position: relative;
+    border-radius: 5px;
+}
+.projects__image {
+    border-radius: 15px;
+    background-color: black;
+}
