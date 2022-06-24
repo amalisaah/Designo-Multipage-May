@@ -21,11 +21,17 @@
     <!-- Wrapper Starts -->
     <div class="wrapper">
       <div class="navbar">
-        <img src="./assets/shared/desktop/logo-dark.png" alt="" />
+        <a href="/src/index.html"><img src="./assets/shared/desktop/logo-dark.png" alt="" /></a>
         <nav class="nav-selection">
-          <a class="company">OUR COMPANY</a>
-          <a>LOCATIONS</a>
-          <a>CONTACT</a>
+          <button class="hamburger__button">
+            <img src="/src/assets/shared/mobile/icon-hamburger.svg" alt="icon-hamburger" class="hamburger__image open">
+            <img src="/src/assets/shared/mobile/icon-close.svg" alt="hamburger-close" class="hamburger__image close">
+          </button>
+          <div class="menu">
+          <a href="/src/about.html" class="company">OUR COMPANY</a>
+          <a href="/src/locations.html">LOCATIONS</a>
+          <a href="/src/contact.html">CONTACT</a>
+        </div>
         </nav>
       </div>
 
@@ -145,19 +151,19 @@
             your project
           </h2>
           <p>
-            Ready to take it to the next level? Contact us today and find out<br />
+            Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </p>
         </div>
 
-        <div>
+        <div class="git"">
           <button>GET IN TOUCH</button>
         </div>
       </section>
 
       <!-- footer -->
       <section class="footer">
-        <div class="navbar">
+        <div class="navbar footer-navbar">
           <img src="./assets/shared/desktop/logo-light.png" alt="" />
           <nav class="nav-selection footer-nav">
             <a>OUR COMPANY</a>
@@ -224,8 +230,14 @@
           </div>
         </div>
       </section>
+      <div class="after-footer"></div>
     </div>
+
+  
     <!-- Wrapper Ends -->
-    <div class="after-footer"></div>
+   
+
+
+    <script src="/src/assets/app-design/app.js"></script>
   </body>
 </html>

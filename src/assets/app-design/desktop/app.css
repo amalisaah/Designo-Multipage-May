@@ -1,0 +1,1867 @@
+/* Mobile Styling */
+@media only screen and (min-device-width:280px){
+    :root {
+        --primary: #E7816B;
+        --primary-light: #FFAD9B;
+        --dark: #1D1C1E;
+        --dark-grey: #333136;
+        --light: #FFFFFF;
+        --light-grey: #F1F3F5;
+       }
+       
+       * {
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px;
+           font-family: Jost;
+       }
+    
+       html, body {
+        overflow-x: hidden;
+        color: var(--dark);
+       }
+    
+       .wrapper{
+        /* background-color: var(--dark-grey); */
+        padding: 0.5rem 0rem 0rem 0rem;
+        display: grid;
+        height: 50rem;
+        /* grid-gap: 1rem; */
+    }
+    
+    /* Nav-Bar Styling */
+    .navbar {
+        /* background-color: var(--light); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .navbar img{
+        /* width: 12rem; */
+        height: 1.5rem;
+    }
+    
+    .nav-selection{
+        /* background-color:#E7816B; */
+        position: relative;
+        left: 2.8rem;
+        /* top: 0.6rem; */
+        bottom: 1.5rem;
+    }
+    
+    .menu {
+        /* background-color: #E7816B; */
+            display: none;
+    }
+    
+    .hamburger__image {
+        width: 1.5rem;
+        height: 1.25rem;
+    }
+    .hamburger__button {
+        background: none;
+        border: none;
+        height: 20px;
+        margin-top: 35px;
+        margin-right: 24px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .show {
+        display: grid;
+        position: fixed;
+        background-color: var(--dark);
+        width: 34rem;
+        height: 15rem;
+        z-index: 100;
+        top: 5.9rem;
+        left: 0rem;
+        color: var(--light);
+        padding-left: 2rem;
+    }
+    nav div a {
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    nav div a {
+        margin-top: 32px;
+    }
+    nav div a:last-child {
+        margin-bottom: 48px;
+    }
+    nav .hamburger__button .close {
+        display: none;
+    }
+    
+    nav .hamburger__button.shown .close {
+        display: block;
+    }
+    nav .hamburger__button.shown .open {
+        display: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    /* App Design Section Styling */
+    .app-design {
+        background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-size: 50rem 30rem;
+        background-position:15% 50%;
+        background-repeat:no-repeat;
+        background-color: var(--primary);
+        display: grid;
+        height: 24rem;
+        width: 17.5rem;
+        text-align: center;
+        align-items:center;
+    }
+    
+    .app{
+        color: var(--light);
+    }
+    
+    .app h2{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .app p{
+      position: relative;
+      top: 1rem;
+      line-height: 1.7rem;
+      font-size: 0.8rem;
+    }
+    
+    /* Card Section Styling */
+    .card-section {
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 6rem;
+        text-align: center;
+        grid-gap: 3rem;
+        width: 100%;
+    }
+    
+    .card{
+        background-color: #FDF3F0;
+        width: 14.8rem;
+        border-radius: 1.2rem;
+        height: 28rem;
+        position: relative;
+        left: 1.3rem;
+    }
+    
+    .card img{
+        width: 14.8rem;
+        height: 17.5rem;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .card-message {
+        position: relative;
+        top: 0rem;
+    }
+    
+    .card-message h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+        color: var(--primary);
+        position: relative;
+        top: 1rem;
+    }
+    
+    .card p{
+        position: relative;
+        top: 1.7rem;
+    }
+    
+    /* Card Hover */
+    .card:hover {
+        background-color: var(--primary);
+       color: var(--light);
+    }
+    
+    .card:hover h3{
+        background-color: var(--primary);
+       color: var(--light);
+    }
+    
+    /* Web Graphic Section styling */
+    .web-graphic{
+        /* background-color:white; */
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 14rem;
+        color: var(--light);
+        text-align: center;
+        grid-gap: 3rem;
+    }
+    
+    /* Web Style */
+    .web{
+        background-color:rgba(0, 0, 0, 0.708);
+        background-blend-mode: overlay;
+        background-image: url(/src/assets/home/desktop/image-web-design-small.jpg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        height: 18rem;
+        display: grid;
+        align-items: center;
+        border-radius: 1rem;
+        justify-content: center;
+        position: relative;
+        width: 14.8rem;
+        left: 1.3rem;
+    }
+    
+    .web-details h3{
+        /* background-color:blue; */
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .web-view{
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-left: 1rem;
+        top: 1rem;
+    }
+    
+    .web-view  h6{
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    
+    .web-view svg{
+        /* background-color:#1D1C1E; */
+        position: relative;
+        /* right: 2rem; */
+    }
+    
+    /* Graphic style */
+    .graphic{
+        background-color:rgba(0, 0, 0, 0.708);
+        background-blend-mode: overlay;
+        background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 19rem;
+        display: grid;
+        align-items: center;
+        border-radius: 1rem;
+        justify-content: center;
+        position: relative;
+        width: 14.8rem;
+        left: 1.3rem;
+    }
+    
+    .graphic-details h3{
+        /* background-color:blue; */
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .graphic-view{
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-left: 1rem;
+        top: 1rem;
+    }
+    
+    .graphic-view  h6{
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    
+    .graphic-view svg{
+        /* background-color:#1D1C1E; */
+        position: relative;
+        right: 0.2rem;
+    }
+    
+    /* Get In Touch Section */
+    .get-in-touch {
+        background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-size: 50rem 30rem;
+        background-position:100% 50%;
+        background-repeat: no-repeat;
+        background-color: var(--primary);
+        display: grid;
+        grid-template-columns: 1fr;
+        height:30rem;
+        border-radius: 1rem;
+        text-align: center;
+        align-items:center;
+        position: relative;
+        width: 14.8rem;
+        left: 1.3rem;
+        top: 70%;
+        color: var(--light);
+        z-index: 10;
+    }
+    
+    .git-message{
+        /* background-color:black; */
+        position: relative;
+        top: 2rem;
+    }
+    .git-message h2{
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    
+    .git-message p{
+        /* background-color: #1D1C1E; */
+        width:14rem;
+        font-size: 0.8rem;
+        position: relative;
+        top: 2rem;
+        left: 0.3rem;
+    }
+    
+    .git button {
+        width: 10rem;
+        height: 4rem;
+        border-radius: 1rem;
+        border: 0;
+        font-size: 1rem;
+        font-weight: 550;
+        word-spacing: 0.3rem;
+        position: relative;
+        bottom: 2rem;
+        /* left: 2.4rem; */
+    }
+    
+    /* button hover */
+    .git button:hover{
+        background-color: var(--primary-light);
+        color: var(--light);
+    }
+    
+    
+    /* Footer Styling */
+    .footer {
+        /* background-color:blue; */
+        display: grid;
+        position: relative;
+        top: 25rem;
+        z-index: 3;
+    }
+    
+    .footer-navbar{
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 14.8rem;
+        position: relative;
+        left: 1.3rem;
+        grid-gap: 3rem;
+        justify-items: center;
+    }
+    
+    .footer-navbar img {
+        /* position: relative; */
+        /* left: 3rem; */
+        text-align: center;
+    }
+    
+    .footer-nav{
+        /* background-color: #E7816B; */
+        color: var(--light);
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        position: relative;
+        height: 10rem;
+        left: 0;
+        top: 2rem;
+      
+    }
+    
+    .details{
+        /* background-color:rgb(22, 182, 62); */
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: end;
+        position: relative;
+        grid-gap: 3rem;
+        text-align: center;
+        line-height: 1.5rem;
+        top: 2rem;
+    }
+    
+    .social-media-icons {
+        /* background-color:#333136; */
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+        position:relative;
+        bottom: 1rem;
+        left: 3.8rem;
+    }
+    
+    /* Social media icons Hover */
+    .social-media-icons svg:hover path{
+        cursor: pointer;
+        fill: var(--primary-light);
+    }
+    
+    .location{
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--light-grey);
+    }
+    
+    .loc-details{
+        font-weight: 600;
+        font-size: 0.65rem;
+        line-height: 0rem;
+    }
+    
+    .contact{
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--light-grey)
+    }
+    
+    /* after footer div */
+    .after-footer{
+        background-color: var(--dark);
+        height: 60rem;
+        width: 17.5rem;
+        position:  relative;
+        top: -28rem;
+    }
+    
+    hr {
+        background-color: var(--light);
+        z-index: 11;
+        position: relative;
+        width: 14.8rem;
+        left: 1.3rem;
+        bottom: 12.0rem;
+    }
+    }
+
+@media only screen and (min-device-width:320px){
+    :root {
+        --primary: #E7816B;
+        --primary-light: #FFAD9B;
+        --dark: #1D1C1E;
+        --dark-grey: #333136;
+        --light: #FFFFFF;
+        --light-grey: #F1F3F5;
+       }
+       
+       * {
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px;
+           font-family: Jost;
+       }
+    
+       html, body {
+        overflow-x: hidden;
+        color: var(--dark);
+       }
+    
+       .wrapper{
+        /* background-color: var(--dark-grey); */
+        padding: 0.5rem 0rem 0rem 0rem;
+        display: grid;
+        height: 50rem;
+        /* grid-gap: 1rem; */
+    }
+    
+    /* Nav-Bar Styling */
+    .navbar {
+        /* background-color: var(--light); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .navbar img{
+        /* width: 12rem; */
+        height: 1.5rem;
+    }
+    
+    .nav-selection{
+        /* background-color:#E7816B; */
+        position: relative;
+        left: 5rem;
+        /* top: 0.6rem; */
+        bottom: 1.5rem;
+    }
+    
+    .menu {
+        /* background-color: #E7816B; */
+            display: none;
+    }
+    
+    .hamburger__image {
+        width: 1.5rem;
+        height: 1.25rem;
+    }
+    .hamburger__button {
+        background: none;
+        border: none;
+        height: 20px;
+        margin-top: 35px;
+        margin-right: 24px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .show {
+        display: grid;
+        position: fixed;
+        background-color: var(--dark);
+        width: 34rem;
+        height: 15rem;
+        z-index: 100;
+        top: 5.9rem;
+        left: 0rem;
+        color: var(--light);
+        padding-left: 2rem;
+    }
+    nav div a {
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    nav div a {
+        margin-top: 32px;
+    }
+    nav div a:last-child {
+        margin-bottom: 48px;
+    }
+    nav .hamburger__button .close {
+        display: none;
+    }
+    
+    nav .hamburger__button.shown .close {
+        display: block;
+    }
+    nav .hamburger__button.shown .open {
+        display: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    /* App Design Section Styling */
+    .app-design {
+        background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-size: 50rem 30rem;
+        background-position:15% 50%;
+        background-repeat:no-repeat;
+        background-color: var(--primary);
+        display: grid;
+        height: 24rem;
+        width: 20rem;
+        text-align: center;
+        align-items:center;
+    }
+    
+    .app{
+        color: var(--light);
+    }
+    
+    .app h2{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .app p{
+      position: relative;
+      top: 1rem;
+      line-height: 1.7rem;
+      font-size: 0.8rem;
+    }
+    
+    /* Card Section Styling */
+    .card-section {
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 6rem;
+        text-align: center;
+        grid-gap: 3rem;
+        width: 100%;
+    }
+    
+    .card{
+        background-color: #FDF3F0;
+        width: 17.5rem;
+        border-radius: 1.2rem;
+        height: 28rem;
+        position: relative;
+        left: 1.3rem;
+    }
+    
+    .card img{
+        width: 17.5rem;
+        height: 20rem;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .card-message {
+        position: relative;
+        top: 0rem;
+    }
+    
+    .card-message h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+        color: var(--primary);
+        position: relative;
+        top: 1rem;
+    }
+    
+    .card p{
+        position: relative;
+        top: 1.7rem;
+    }
+    
+    /* Card Hover */
+    .card:hover {
+        background-color: var(--primary);
+       color: var(--light);
+    }
+    
+    .card:hover h3{
+        background-color: var(--primary);
+       color: var(--light);
+    }
+    
+    /* Web Graphic Section styling */
+    .web-graphic{
+        /* background-color:white; */
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 14rem;
+        color: var(--light);
+        text-align: center;
+        grid-gap: 3rem;
+    }
+    
+    /* Web Style */
+    .web{
+        background-color:rgba(0, 0, 0, 0.708);
+        background-blend-mode: overlay;
+        background-image: url(/src/assets/home/desktop/image-web-design-small.jpg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        height: 18rem;
+        display: grid;
+        align-items: center;
+        border-radius: 1rem;
+        justify-content: center;
+        position: relative;
+        width: 17.5rem;
+        left: 1.3rem;
+    }
+    
+    .web-details h3{
+        /* background-color:blue; */
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .web-view{
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-left: 1rem;
+        top: 1rem;
+    }
+    
+    .web-view  h6{
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    
+    .web-view svg{
+        /* background-color:#1D1C1E; */
+        position: relative;
+        /* right: 2rem; */
+    }
+    
+    /* Graphic style */
+    .graphic{
+        background-color:rgba(0, 0, 0, 0.708);
+        background-blend-mode: overlay;
+        background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 19rem;
+        display: grid;
+        align-items: center;
+        border-radius: 1rem;
+        justify-content: center;
+        position: relative;
+        width: 17.5rem;
+        left: 1.3rem;
+    }
+    
+    .graphic-details h3{
+        /* background-color:blue; */
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .graphic-view{
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-left: 1rem;
+        top: 1rem;
+    }
+    
+    .graphic-view  h6{
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    
+    .graphic-view svg{
+        /* background-color:#1D1C1E; */
+        position: relative;
+        right: 1rem;
+    }
+    
+    /* Get In Touch Section */
+    .get-in-touch {
+        background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-size: 50rem 30rem;
+        background-position:100% 50%;
+        background-repeat: no-repeat;
+        background-color: var(--primary);
+        display: grid;
+        grid-template-columns: 1fr;
+        height:30rem;
+        border-radius: 1rem;
+        text-align: center;
+        align-items:center;
+        position: relative;
+        width: 17.5rem;
+        left: 1.3rem;
+        top: 70%;
+        color: var(--light);
+        z-index: 10;
+    }
+    
+    .git-message{
+        /* background-color:black; */
+        position: relative;
+        top: 2rem;
+    }
+    .git-message h2{
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    
+    .git-message p{
+        /* background-color: #1D1C1E; */
+        width:17rem;
+        font-size: 0.8rem;
+        position: relative;
+        top: 2rem;
+        left: 0.3rem;
+    }
+    
+    .git button {
+        width: 10rem;
+        height: 4rem;
+        border-radius: 1rem;
+        border: 0;
+        font-size: 1rem;
+        font-weight: 550;
+        word-spacing: 0.3rem;
+        position: relative;
+        bottom: 2rem;
+        /* left: 2.4rem; */
+    }
+    
+    /* button hover */
+    .git button:hover{
+        background-color: var(--primary-light);
+        color: var(--light);
+    }
+    
+    
+    /* Footer Styling */
+    .footer {
+        /* background-color:blue; */
+        display: grid;
+        position: relative;
+        top: 25rem;
+        z-index: 3;
+    }
+    
+    .footer-navbar{
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 17.5rem;
+        position: relative;
+        left: 1.3rem;
+        grid-gap: 3rem;
+        justify-items: center;
+    }
+    
+    .footer-navbar img {
+        /* position: relative; */
+        /* left: 3rem; */
+        text-align: center;
+    }
+    
+    .footer-nav{
+        /* background-color: #E7816B; */
+        color: var(--light);
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        position: relative;
+        height: 10rem;
+        left: 0;
+        top: 2rem;
+      
+    }
+    
+    .details{
+        /* background-color:rgb(22, 182, 62); */
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: end;
+        position: relative;
+        grid-gap: 3rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    .social-media-icons {
+        /* background-color:#333136; */
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+        position:relative;
+        bottom: 1rem;
+        left: 5.5rem;
+    }
+    
+    /* Social media icons Hover */
+    .social-media-icons svg:hover path{
+        cursor: pointer;
+        fill: var(--primary-light);
+    }
+    
+    .location{
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--light-grey);
+    }
+    
+    .loc-details{
+        font-weight: 600;
+        font-size: 0.65rem;
+        line-height: 0rem;
+    }
+    
+    .contact{
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--light-grey)
+    }
+    
+    /* after footer div */
+    .after-footer{
+        background-color: var(--dark);
+        height: 60rem;
+        width: 20.8rem;
+        position:  relative;
+        top: -28rem;
+    }
+    
+    hr {
+        background-color: var(--light);
+        z-index: 11;
+        position: relative;
+        width: 17.5rem;
+        left: 1.3rem;
+        bottom: 11.5rem;
+    }
+    }
+
+@media only screen and (min-device-width:375px){
+    :root {
+        --primary: #E7816B;
+        --primary-light: #FFAD9B;
+        --dark: #1D1C1E;
+        --dark-grey: #333136;
+        --light: #FFFFFF;
+        --light-grey: #F1F3F5;
+       }
+       
+       * {
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px;
+           font-family: Jost;
+       }
+    
+       html, body {
+        overflow-x: hidden;
+        color: var(--dark);
+       }
+    
+       .wrapper{
+        /* background-color: var(--dark-grey); */
+        padding: 0.5rem 0rem 0rem 0rem;
+        display: grid;
+        height: 50rem;
+        /* grid-gap: 1rem; */
+    }
+    
+    /* Nav-Bar Styling */
+    .navbar {
+        /* background-color: var(--light); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 1.5rem;
+    }
+    
+    .navbar img{
+        /* width: 12rem; */
+        height: 1.5rem;
+    }
+    
+    .nav-selection{
+        /* background-color:#E7816B; */
+        position: relative;
+        left: 7.5rem;
+        /* top: 0.6rem; */
+        bottom: 1.5rem;
+    }
+    
+    .menu {
+        /* background-color: #E7816B; */
+            display: none;
+    }
+    
+    .hamburger__image {
+        width: 1.5rem;
+        height: 1.25rem;
+    }
+    .hamburger__button {
+        background: none;
+        border: none;
+        height: 20px;
+        margin-top: 35px;
+        margin-right: 24px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .show {
+        display: grid;
+        position: fixed;
+        background-color: var(--dark);
+        width: 34rem;
+        height: 15rem;
+        z-index: 100;
+        top: 6.5rem;
+        left: 0rem;
+        color: var(--light);
+        padding-left: 2rem;
+    }
+    nav div a {
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    nav div a {
+        margin-top: 32px;
+    }
+    nav div a:last-child {
+        margin-bottom: 48px;
+    }
+    nav .hamburger__button .close {
+        display: none;
+    }
+    
+    nav .hamburger__button.shown .close {
+        display: block;
+    }
+    nav .hamburger__button.shown .open {
+        display: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    /* App Design Section Styling */
+    .app-design {
+        background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-size: 50rem 30rem;
+        background-position:15% 50%;
+        background-repeat:no-repeat;
+        background-color: var(--primary);
+        display: grid;
+        height: 24rem;
+        width: 23.41rem;
+        text-align: center;
+        align-items:center;
+    }
+    
+    .app{
+        color: var(--light);
+    }
+    
+    .app h2{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .app p{
+      position: relative;
+      top: 2rem;
+      line-height: 1.7rem;
+    }
+    
+    /* Card Section Styling */
+    .card-section {
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 6rem;
+        text-align: center;
+        grid-gap: 3rem;
+        width: 100%;
+    }
+    
+    .card{
+        background-color: #FDF3F0;
+        width: 20.8rem;
+        border-radius: 1.2rem;
+        height: 34rem;
+        position: relative;
+        left: 1.3rem;
+    }
+    
+    .card img{
+        width: 20.8rem;
+        height: 25rem;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .card-message {
+        position: relative;
+        top: 0.5rem;
+    }
+    
+    .card-message h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+        color: var(--primary);
+        position: relative;
+        top: 1rem;
+    }
+    
+    .card p{
+        position: relative;
+        top: 1.7rem;
+    }
+    
+    /* Card Hover */
+    .card:hover {
+        background-color: var(--primary);
+       color: var(--light);
+    }
+    
+    .card:hover h3{
+        background-color: var(--primary);
+       color: var(--light);
+    }
+    
+    /* Web Graphic Section styling */
+    .web-graphic{
+        /* background-color:white; */
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 14rem;
+        color: var(--light);
+        text-align: center;
+        grid-gap: 3rem;
+    }
+    
+    /* Web Style */
+    .web{
+        background-color:rgba(0, 0, 0, 0.708);
+        background-blend-mode: overlay;
+        background-image: url(/src/assets/home/desktop/image-web-design-small.jpg);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        height: 18rem;
+        display: grid;
+        align-items: center;
+        border-radius: 1rem;
+        justify-content: center;
+        position: relative;
+        width: 20.8rem;
+        left: 1.3rem;
+    }
+    
+    .web-details h3{
+        /* background-color:blue; */
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .web-view{
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-left: 1rem;
+        top: 1rem;
+    }
+    
+    .web-view  h6{
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    
+    .web-view svg{
+        /* background-color:#1D1C1E; */
+        position: relative;
+        /* right: 2rem; */
+    }
+    
+    /* Graphic style */
+    .graphic{
+        background-color:rgba(0, 0, 0, 0.708);
+        background-blend-mode: overlay;
+        background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 19rem;
+        display: grid;
+        align-items: center;
+        border-radius: 1rem;
+        justify-content: center;
+        position: relative;
+        width: 20.8rem;
+        left: 1.3rem;
+    }
+    
+    .graphic-details h3{
+        /* background-color:blue; */
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .graphic-view{
+        /* background-color:#F1F3F5; */
+        display: grid;
+        grid-template-columns: 3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-left: 1rem;
+        top: 1rem;
+    }
+    
+    .graphic-view  h6{
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    
+    .graphic-view svg{
+        /* background-color:#1D1C1E; */
+        position: relative;
+        right: 1rem;
+    }
+    
+    /* Get In Touch Section */
+    .get-in-touch {
+        background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-size: 50rem 30rem;
+        background-position:100% 50%;
+        background-repeat: no-repeat;
+        background-color: var(--primary);
+        display: grid;
+        grid-template-columns: 1fr;
+        height:30rem;
+        border-radius: 1rem;
+        text-align: center;
+        align-items:center;
+        position: relative;
+        width: 20.8rem;
+        left: 1.3rem;
+        top: 70%;
+        color: var(--light);
+        z-index: 10;
+    }
+    
+    .git-message{
+        /* background-color:black; */
+        position: relative;
+        top: 2rem;
+    }
+    .git-message h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+    }
+    
+    .git-message p{
+        /* background-color: #1D1C1E; */
+        width: 20rem;
+        font-size: 1rem;
+        position: relative;
+        top: 1rem;
+        left: 0.3rem;
+    }
+    
+    .git button {
+        width: 10rem;
+        height: 4rem;
+        border-radius: 1rem;
+        border: 0;
+        font-size: 1rem;
+        font-weight: 550;
+        word-spacing: 0.3rem;
+        position: relative;
+        bottom: 2rem;
+        /* left: 2.4rem; */
+    }
+    
+    /* button hover */
+    .git button:hover{
+        background-color: var(--primary-light);
+        color: var(--light);
+    }
+    
+    
+    /* Footer Styling */
+    .footer {
+        /* background-color:blue; */
+        display: grid;
+        position: relative;
+        top: 25rem;
+        z-index: 3;
+    }
+    
+    .footer-navbar{
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 20.8rem;
+        position: relative;
+        left: 1.3rem;
+        grid-gap: 3rem;
+        justify-items: center;
+    }
+    
+    .footer-navbar img {
+        /* position: relative; */
+        /* left: 3rem; */
+        text-align: center;
+    }
+    
+    .footer-nav{
+        /* background-color: #E7816B; */
+        color: var(--light);
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        position: relative;
+        height: 10rem;
+        left: 0;
+        top: 2rem;
+      
+    }
+    
+    .details{
+        /* background-color:rgb(22, 182, 62); */
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: end;
+        position: relative;
+        grid-gap: 3rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    .social-media-icons {
+        /* background-color:#333136; */
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+        position:relative;
+        bottom: 1rem;
+        left: 7.1rem;
+    }
+    
+    /* Social media icons Hover */
+    .social-media-icons svg:hover path{
+        cursor: pointer;
+        fill: var(--primary-light);
+    }
+    
+    .location{
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--light-grey);
+    }
+    
+    .loc-details{
+        font-weight: 600;
+        font-size: 0.65rem;
+        line-height: 0rem;
+    }
+    
+    .contact{
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--light-grey)
+    }
+    
+    /* after footer div */
+    .after-footer{
+        background-color: var(--dark);
+        height: 60rem;
+        width: 24.1rem;
+        position:  relative;
+        top: -28rem;
+    }
+    
+    hr {
+        background-color: var(--light);
+        z-index: 11;
+        position: relative;
+        width: 20.8rem;
+        left: 1.3rem;
+        bottom: 12rem;
+    }
+    }
+
+@media only screen and (min-device-width:425px){
+:root {
+    --primary: #E7816B;
+    --primary-light: #FFAD9B;
+    --dark: #1D1C1E;
+    --dark-grey: #333136;
+    --light: #FFFFFF;
+    --light-grey: #F1F3F5;
+   }
+   
+   * {
+       box-sizing: border-box;
+       margin: 0px;
+       padding: 0px;
+       font-family: Jost;
+   }
+
+   html, body {
+    overflow-x: hidden;
+    color: var(--dark);
+   }
+
+   .wrapper{
+    /* background-color: var(--dark-grey); */
+    padding: 0.5rem 0rem 0rem 0rem;
+    display: grid;
+    height: 50rem;
+    /* grid-gap: 1rem; */
+}
+
+/* Nav-Bar Styling */
+.navbar {
+    /* background-color: var(--light); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+}
+
+.navbar img{
+    /* width: 12rem; */
+    height: 1.5rem;
+}
+
+.nav-selection{
+    /* background-color:#E7816B; */
+    position: relative;
+    left: 9rem;
+    /* top: 0.6rem; */
+    bottom: 1.5rem;
+}
+
+.menu {
+    /* background-color: #E7816B; */
+        display: none;
+}
+
+.hamburger__image {
+    width: 1.5rem;
+    height: 1.25rem;
+}
+.hamburger__button {
+    background: none;
+    border: none;
+    height: 20px;
+    margin-top: 35px;
+    margin-right: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.show {
+    display: grid;
+    position: fixed;
+    background-color: var(--dark);
+    width: 34rem;
+    height: 15rem;
+    z-index: 100;
+    top: 6.5rem;
+    left: 0rem;
+    color: var(--light);
+    padding-left: 2rem;
+}
+nav div a {
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav div a {
+    margin-top: 32px;
+}
+nav div a:last-child {
+    margin-bottom: 48px;
+}
+nav .hamburger__button .close {
+    display: none;
+}
+
+nav .hamburger__button.shown .close {
+    display: block;
+}
+nav .hamburger__button.shown .open {
+    display: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* App Design Section Styling */
+.app-design {
+    background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: 50rem 30rem;
+    background-position:15% 50%;
+    background-repeat:no-repeat;
+    background-color: var(--primary);
+    display: grid;
+    height: 24rem;
+    width: 26.55rem;
+    text-align: center;
+    align-items:center;
+}
+
+.app{
+    color: var(--light);
+}
+
+.app h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.app p{
+  position: relative;
+  top: 2rem;
+  line-height: 1.7rem;
+}
+
+/* Card Section Styling */
+.card-section {
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 6rem;
+    text-align: center;
+    grid-gap: 3rem;
+    width: 100%;
+}
+
+.card{
+    background-color: #FDF3F0;
+    width: 24rem;
+    border-radius: 1.2rem;
+    height: 37rem;
+    position: relative;
+    left: 1.3rem;
+}
+
+.card img{
+    width: 24rem;
+    height: 25rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card-message {
+    position: relative;
+    top: 1.5rem;
+}
+
+.card-message h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    color: var(--primary);
+    position: relative;
+    top: 1rem;
+}
+
+.card p{
+    position: relative;
+    top: 1.7rem;
+}
+
+/* Card Hover */
+.card:hover {
+    background-color: var(--primary);
+   color: var(--light);
+}
+
+.card:hover h3{
+    background-color: var(--primary);
+   color: var(--light);
+}
+
+/* Web Graphic Section styling */
+.web-graphic{
+    /* background-color:white; */
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 14rem;
+    color: var(--light);
+    text-align: center;
+    grid-gap: 3rem;
+}
+
+/* Web Style */
+.web{
+    background-color:rgba(0, 0, 0, 0.708);
+    background-blend-mode: overlay;
+    background-image: url(/src/assets/home/desktop/image-web-design-small.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 18rem;
+    display: grid;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: center;
+    position: relative;
+    width: 24rem;
+    left: 1.3rem;
+}
+
+.web-details h3{
+    /* background-color:blue; */
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.web-view{
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    padding-left: 1rem;
+    top: 1rem;
+}
+
+.web-view  h6{
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.web-view svg{
+    /* background-color:#1D1C1E; */
+    position: relative;
+    /* right: 2rem; */
+}
+
+/* Graphic style */
+.graphic{
+    background-color:rgba(0, 0, 0, 0.708);
+    background-blend-mode: overlay;
+    background-image: url(/src/assets/home/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 19rem;
+    display: grid;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: center;
+    position: relative;
+    width: 24rem;
+    left: 1.3rem;
+}
+
+.graphic-details h3{
+    /* background-color:blue; */
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.graphic-view{
+    /* background-color:#F1F3F5; */
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    padding-left: 1rem;
+    top: 1rem;
+}
+
+.graphic-view  h6{
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.graphic-view svg{
+    /* background-color:#1D1C1E; */
+    position: relative;
+    right: 1rem;
+}
+
+/* Get In Touch Section */
+.get-in-touch {
+    background-image: url(/src/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: 50rem 30rem;
+    background-position:100% 50%;
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    height:30rem;
+    border-radius: 1rem;
+    text-align: center;
+    align-items:center;
+    position: relative;
+    width: 24rem;
+    left: 1.3rem;
+    top: 70%;
+    color: var(--light);
+    z-index: 10;
+}
+
+.git-message{
+    /* background-color:black; */
+    position: relative;
+    top: 2rem;
+}
+.git-message h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.git-message p{
+    /* background-color: #1D1C1E; */
+    width: 20rem;
+    font-size: 1rem;
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+}
+
+.git button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 550;
+    word-spacing: 0.3rem;
+    position: relative;
+    bottom: 2rem;
+    /* left: 2.4rem; */
+}
+
+/* button hover */
+.git button:hover{
+    background-color: var(--primary-light);
+    color: var(--light);
+}
+
+
+/* Footer Styling */
+.footer {
+    /* background-color:blue; */
+    display: grid;
+    position: relative;
+    top: 25rem;
+    z-index: 3;
+}
+
+.footer-navbar{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 24rem;
+    position: relative;
+    left: 1.3rem;
+    grid-gap: 3rem;
+    justify-items: center;
+}
+
+.footer-navbar img {
+    /* position: relative; */
+    /* left: 3rem; */
+    text-align: center;
+}
+
+.footer-nav{
+    /* background-color: #E7816B; */
+    color: var(--light);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    position: relative;
+    height: 10rem;
+    left: 0;
+    top: 2rem;
+  
+}
+
+.details{
+    /* background-color:rgb(22, 182, 62); */
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    position: relative;
+    grid-gap: 3rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.social-media-icons {
+    /* background-color:#333136; */
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    position:relative;
+    bottom: 1rem;
+    left: 8.5rem;
+}
+
+/* Social media icons Hover */
+.social-media-icons svg:hover path{
+    cursor: pointer;
+    fill: var(--primary-light);
+}
+
+.location{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--light-grey);
+}
+
+.loc-details{
+    font-weight: 600;
+    font-size: 0.65rem;
+    line-height: 0rem;
+}
+
+.contact{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--light-grey)
+}
+
+/* after footer div */
+.after-footer{
+    background-color: var(--dark);
+    height: 60rem;
+    width: 26.55rem;
+    position:  relative;
+    top: -28rem;
+}
+
+hr {
+    background-color: var(--light);
+    z-index: 11;
+    position: relative;
+    width: 24rem;
+    left: 1.3rem;
+    bottom: 12.8rem;
+}
+}
