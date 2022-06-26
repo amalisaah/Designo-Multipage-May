@@ -1,5 +1,5 @@
 /* Mobile Styling */
-@media only screen and (min-device-width:280px){
+@media only screen and (min-width:280px){
     :root {
         --primary: #E7816B;
         --primary-light: #FFAD9B;
@@ -25,7 +25,7 @@
         /* background-color: var(--dark-grey); */
         padding: 0.5rem 0rem 0rem 0rem;
         display: grid;
-        height: 50rem;
+        height: 100vh;
         /* grid-gap: 1rem; */
     }
     
@@ -467,7 +467,7 @@
     }
     }
 
-@media only screen and (min-device-width:320px){
+@media only screen and (min-width:320px){
     :root {
         --primary: #E7816B;
         --primary-light: #FFAD9B;
@@ -493,7 +493,7 @@
         /* background-color: var(--dark-grey); */
         padding: 0.5rem 0rem 0rem 0rem;
         display: grid;
-        height: 50rem;
+        height: 100vh;
         /* grid-gap: 1rem; */
     }
     
@@ -934,7 +934,7 @@
     }
     }
 
-@media only screen and (min-device-width:375px){
+@media only screen and (min-width:375px){
     :root {
         --primary: #E7816B;
         --primary-light: #FFAD9B;
@@ -960,7 +960,7 @@
         /* background-color: var(--dark-grey); */
         padding: 0.5rem 0rem 0rem 0rem;
         display: grid;
-        height: 50rem;
+        height: 100vh;
         /* grid-gap: 1rem; */
     }
     
@@ -1400,7 +1400,7 @@
     }
     }
 
-@media only screen and (min-device-width:425px){
+@media only screen and (min-width:425px){
 :root {
     --primary: #E7816B;
     --primary-light: #FFAD9B;
@@ -1426,7 +1426,7 @@
     /* background-color: var(--dark-grey); */
     padding: 0.5rem 0rem 0rem 0rem;
     display: grid;
-    height: 50rem;
+    height: 100vh;
     /* grid-gap: 1rem; */
 }
 
@@ -1867,7 +1867,7 @@ hr {
 }
 
 /* Tablet Styling */
-@media only screen and (min-device-width:768px){
+@media only screen and (min-width:768px){
     :root {
         --primary: #E7816B;
         --primary-light: #FFAD9B;
@@ -1893,7 +1893,7 @@ hr {
         /* background-color: var(--dark-grey); */
         padding: 0.5rem 0rem 0rem 0rem;
         display: grid;
-        height: 50rem;
+        height: 100vh;
         /* grid-gap: 1rem; */
     }
     
@@ -2341,7 +2341,7 @@ hr {
     }
 
 /* Desktop Styling */
-@media only screen and (min-device-width:1024px){
+@media only screen and (min-width:1024px){
         :root {
             --primary: #E7816B;
             --primary-light: #FFAD9B;
@@ -2367,7 +2367,7 @@ hr {
             /* background-color: var(--dark-grey); */
             padding: 0.5rem 0rem 0rem 0rem;
             display: grid;
-            height: 41.7rem;
+            height: 100vh;
             /* grid-gap: 1rem; */
         }
         
@@ -2825,7 +2825,7 @@ hr {
         }
         }
 
-@media only screen and (min-device-width:1366px){
+@media only screen and (min-width:1366px){
         :root {
             --primary: #E7816B;
             --primary-light: #FFAD9B;
@@ -2851,7 +2851,7 @@ hr {
             /* background-color: var(--dark-grey); */
             padding: 0.5rem 0rem 0rem 0rem;
             display: grid;
-            height: 41.7rem;
+            height: 100vh;
             /* grid-gap: 1rem; */
         }
         
@@ -3307,7 +3307,7 @@ hr {
         }
         }
 
-@media only screen and (min-device-width:1440px){
+@media only screen and (min-width:1440px){
             :root {
                 --primary: #E7816B;
                 --primary-light: #FFAD9B;
@@ -3333,7 +3333,7 @@ hr {
                 /* background-color: var(--dark-grey); */
                 padding: 0.5rem 0rem 0rem 0rem;
                 display: grid;
-                height: 41.7rem;
+                height: 100vh;
                 /* grid-gap: 1rem; */
             }
             
