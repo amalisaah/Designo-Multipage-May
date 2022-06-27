@@ -5,56 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href=".\assets\locations\location.css">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <header>
+    <nav>
+      <img src=".\assets\shared\desktop\logo-dark.png" alt="logo">
+      <ul>
+        <li><a href="">Our Company</a></li> 
+        <li><a href="">Locations</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <img src=".\assets\shared\mobile\icon-hamburger.svg" alt="menu icon" class="menu">
+    </nav>
+  </header>
+  <main>
+    <div class="address ">
+      <div class="loc canada right">
+        <h2>Canada</h2>
+        <div class="add">
+         <address> 
+          <strong>Designo Central Office</strong> <br>
+          3886 Wellington Street<br>
+          Toronto, Ontario M9C 3J5<br>
+        </address>
+        <address>
+          <strong>Contact</strong><br>
+          P : +1 253-863-8967<br>
+          M : contact@designo.co<br>
+        </address> 
+        </div> 
+      </div>
+      <div class="map">
+        <picture>
+          <source media="(min-width:769px )" srcset=".\assets\locations\desktop\image-map-canada.png">
+          <source media="(min-width:365px )" srcset=".\assets\locations\tablet\image-map-canada.png">
+          <img src=".\assets\locations\desktop\image-map-canada.png" alt="map of canada">
+        </picture>
+      </div>
+      <!-- <div id="map" height="150px"></div>
+      <a href="..\assets\locations\desktop\location.js" type="javascript"></a> -->
+    </div>
+    <div class="address address_second left">
+      <div class="map">
+        <picture>
+          <source media="(min-width: 769px)" srcset=".\assets\locations\desktop\image-map-australia.png">
+          <source media="(min-width: 365px)" srcset=".\assets\locations\tablet\image-map-australia.png">
+          <img src=".\assets\locations\tablet\image-map-australia.png" alt="map of Australia">
+        </picture>
+      </div>
+      <div class="loc australia left">
+        <h2>Australia</h2>
+        <div class="add">
+         <address>
+          <strong>Designo AU Office</strong> <br>
+          19 Balonne Street <br>
+          New South Wales 2443 <br>
+        </address>
+        <address>
+          <strong>Contact</strong><br>
+          P : (02) 6720 9092 <br>
+          M : contact@designo.au <br>
+        </address> 
+        </div> 
+      </div>
+    </div>
+    <div class="address ">
+      <div class="loc UK right">
+        <h2>United Kingdom</h2>
+        <div class="add">
+          <address> 
+            <p><strong>Designo UK Office</strong></p>          
+            <p>13 Colorado Way</p>
+            <p>Rhyd-y-fro SA8 9GA</p>
+          </address>
+          <address>
+            <p><strong>Contact</strong> </p>
+            <p>P : 078 3115 1400</p>
+            <p>M : contact@designo.uk</p>
+          </address>
+        </div>
+        
+      </div>
+      <div class="map">
+        <picture>
+          <source media="(min-width: 769px)" srcset=".\assets\locations\desktop\image-map-united-kingdom.png">
+          <source media="(min-width: 365px)" srcset=".\assets\locations\tablet\image-map-united-kingdom.png">
+          <img src=".\assets\locations\desktop\image-map-united-kingdom.png" alt="map of UK">
+        </picture>
+      </div>
+    </div>  
+  </main>
+  <div class="project">
+    <div class="project_text">
+      <h2> Let’s talk about your project</h2>
+      <p>Ready to take it to the next level? Contact us today and find out how our expertise can 
+help your business grow.</p>
+    </div>
+    <button>Get in touch</button>
+  </div>
 
-  Canada
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact
-  P : +1 253-863-8967
-  M : contact@designo.co
-
-  Australia
-  Designo AU Office
-  19 Balonne Street
-  New South Wales 2443
-
-  Contact
-  P : (02) 6720 9092
-  M : contact@designo.au
-
-  United Kingdom
-  Designo UK Office
-  13 Colorado Way
-  Rhyd-y-fro SA8 9GA
-
-  Contact
-  P : 078 3115 1400
-  M : contact@designo.uk
-
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+  <footer>
+    
+    <div class="lower_foot">
+      <nav>
+        <img src=".\assets\shared\desktop\logo-light.png" alt="logo">
+        <ul>
+          <li><a href=".\index.html">Our Company</a></li> 
+          <li><a href=".\locations.html">Locations</a></li>
+          <li><a href=".\contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <hr>
+      
+      <div class="address_container">
+        <div class="mobile_temp">
+          <ul>
+            <li><a href=".\index.html">Our Company</a></li> 
+            <li><a href=".\locations.html">Locations</a></li>
+            <li><a href=".\contact.html">Contact</a></li>
+          </ul>
+        </div>
+      <address>
+          Designo Central Office <br>
+          3886 Wellington Street <br>
+          Toronto, Ontario M9C 3J5 <br>
+        </address>
+        <address>
+          Contact Us (Central Office) <br>
+          P : +1 253-863-8967 <br>
+          M : <a href="mailto:contact@designo.co">contact@designo.co</a> <br>
+        </address>
+        <div class="icons_box">
+          <ul>
+            <li>
+              <a href="#"><img src="./assets/shared/desktop/icon-facebook.svg" alt="icon-facebook" class="socials" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/shared/desktop/icon-youtube.svg" alt="icon-youtube" class="socials" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/shared/desktop/icon-twitter.svg" alt="icon-twitter" class="socials" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/shared/desktop/icon-pinterest.svg" alt="icon-pinterest"
+                  class="socials" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/shared/desktop/icon-instagram.svg" alt="icon-instagram" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+    
+  </footer>
 </body>
 </html>
