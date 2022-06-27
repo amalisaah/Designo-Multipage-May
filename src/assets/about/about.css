@@ -14,7 +14,7 @@ body {
     background-image: url(../shared/desktop/bg-pattern-leaf.svg);
     background-size: 50rem 30rem;
     background-position:100% 50%;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 header,.container {
     max-width: 100%;   
@@ -178,7 +178,7 @@ hr {
     align-items: center; 
     justify-content: space-between;
     text-transform: uppercase;
-    /* height: 98px; */
+    height: 98px;
 }
 .address_container {
     display: flex;
@@ -211,6 +211,9 @@ button {
     text-transform: uppercase;
     border-radius: 1rem;
     border-style: none;
+}
+button a {
+    color: inherit;
 }
 
 /*phone icons BREAKING POINT*/
@@ -251,8 +254,7 @@ button {
         justify-content: center;
         color: white;
         padding: 4% 7% 8.6% 4%;
-        height: 100%;
-        border-radius: 1rem 0 0 1rem;          
+        height: 100%;        
     }
     h1 {
         font-size: 3rem;
@@ -270,19 +272,22 @@ button {
         height: 100%;
     }
     .talent_text {
-        border-radius: 0 1rem 1rem 0 ;
+        border-radius: 0 0 1rem 1rem;
     }
     .deal_text {
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+    .about_text {
+        border-radius: 1rem 1rem 0 0 ;  
     }
     .talent .image img {
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 1rem 1rem 0 0;
     }
     .about .image img {
-        border-radius: 0 1rem 1rem 0;
+        border-radius: 0 0 1rem 1rem;
     }
     .deal img {
-        border-radius: 0 1rem 1rem 0;
+        border-radius: 1rem 1rem 0  0;
     }
     .talent,.deal {
         display: flex;
@@ -383,18 +388,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 830px) and (min-width: 769px){
-    .deal_text,.talent_text,.about_text {
-        padding: 0 4.5%;
-    }
-    nav img {
-        width: 192px;
-        height: 22px;
-    }
-    li {
-        margin-left: 32px;
-    }
-}
+
 
 /* DESKTOP VIEW*/
 @media only screen and (min-width: 769px){
@@ -437,6 +431,24 @@ button {
         height: 364px;
         flex-direction: row;
     }
+    .talent_text {
+        border-radius: 0 1rem 1rem 0 ;
+    }
+    .deal_text {
+        border-radius: 1rem 0 0 1rem;
+    }
+    .about_text {
+        border-radius: 1rem 0 0 1rem;  
+    }
+    .talent .image img {
+        border-radius: 1rem 0 0 1rem;
+    }
+    .about .image img {
+        border-radius: 0 1rem 1rem 0;
+    }
+    .deal img {
+        border-radius:  0 1rem 1rem 0;
+    }
     .project {
         max-width: 1111px;
         top: 72px;
@@ -446,4 +458,16 @@ button {
     footer {
         height: 393px;
     } 
+}
+@media only screen and (max-width: 838px) and (min-width: 769px){
+    .deal_text,.talent_text,.about_text {
+        padding: 0 4.5%;
+    }
+    nav img {
+        width: 192px;
+        height: 22px;
+    }
+    li {
+        margin-left: 32px;
+    }
 }
