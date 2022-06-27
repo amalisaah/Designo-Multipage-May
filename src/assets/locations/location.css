@@ -65,6 +65,10 @@ nav a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-image: url(../shared/desktop/bg-pattern-two-circles.svg);
+    background-size: 50rem 30rem;
+    background-position:100% 50%;
+    background-repeat: no-repeat;
 }
 /* address {
     display: flex;
@@ -90,7 +94,7 @@ address {
     justify-content: space-around;
     margin:0 auto;
     z-index: 5; 
-    background-image: url(./desktop/bg-pattern-call-to-action.svg);
+    background-image: url(../shared/desktop/bg-pattern-call-to-action.svg);
     background-size: 50rem 30rem;
     background-position:100% 50%;
     background-repeat: no-repeat;

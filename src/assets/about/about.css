@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
     font-family: "Jost", sans-serif;
     font-size: 15px;
+    background-image: url(../shared/desktop/bg-pattern-leaf.svg);
+    background-size: 50rem 30rem;
+    background-position:100% 50%;
+    /* background-repeat: no-repeat; */
 }
 header,.container {
     max-width: 100%;   
@@ -51,7 +55,11 @@ nav a {
 }
 .about_text {
     background-color: #E7816B;
-    height: 395px;      
+    height: 395px;     
+    background-image: url(../shared/desktop/bg-pattern-small-circle.svg);
+    background-size: 30rem 30rem;
+    background-position:80% 50%;
+    background-repeat: no-repeat;
 }
 .text_box {
     display: flex;
@@ -65,6 +73,10 @@ nav a {
 .deal_text, .talent_text {
     background-color: #FDF3F0;
     height: 545px;
+    background-image: url(../shared/desktop/bg-pattern-two-circles.svg);
+    background-size: 50rem 30rem;
+    background-position:60% 80%;
+    background-repeat: no-repeat;
 }
 h1 {
     font-size: 2rem;
@@ -84,7 +96,7 @@ h2 {
     justify-content: space-around;
     margin:0 auto;
     z-index: 5; 
-    background-image: url(./desktop/bg-pattern-call-to-action.svg);
+    background-image: url(../shared/desktop/bg-pattern-call-to-action.svg);
     background-size: 50rem 30rem;
     background-position:100% 50%;
     background-repeat: no-repeat;
