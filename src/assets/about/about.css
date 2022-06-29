@@ -93,7 +93,7 @@ h2 {
     height: 379px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     margin:0 auto;
     z-index: 5; 
     background-image: url(../shared/desktop/bg-pattern-call-to-action.svg);
@@ -101,17 +101,25 @@ h2 {
     background-position:100% 50%;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    text-align: left;
     align-items:center;
     position: relative;
 }
 .project_text {
+    padding-left: 6.0%;
+    padding-right: 6.0%;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 26px;
 }
 .project h2 {
     color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 0px;
 }
 .project button {
     background-color: #FFFFFF;
@@ -215,6 +223,14 @@ button {
 button a {
     color: inherit;
 }
+/*small screen Project BREAKING POINT*/
+@media only screen and (min-width: 275px){
+    .project_text {
+        padding-left: 6.4%;
+        padding-right: 6.4%;
+        line-height: 36px;   
+    }
+}
 
 /*phone icons BREAKING POINT*/
 @media only screen and (max-width: 275px) {
@@ -307,19 +323,21 @@ button a {
     .location {
         height: 1230px;
     }
+    .project {
+        height: 350px;
+        top: 36px;
+    }
+    .project_text h2 {
+        font-size: 40px;
+    }
     
 }
 
-/*tablet project box BREAKING POINT*/
-@media only screen and (min-width: 496px) {
-    .project {
-        width: 77.153%;
-        top: 72px;
-        height: 350px;
-        flex-direction: row;
-    }
+/* project text BREAK POINT*/
+@media only screen and (min-width: 398px){
     .project_text {
-        max-width: 41.3%;
+        font-size: 16px;
+        line-height: 40px;
     }
 }
 
@@ -450,9 +468,19 @@ button a {
         border-radius:  0 1rem 1rem 0;
     }
     .project {
-        max-width: 1111px;
+        width: 77.153%;
         top: 72px;
         height: 292px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .project_text {
+        max-width: 41.3%; 
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF; 
+        padding-left: 0;
+        padding-right: 0;
     }
 
     footer {
