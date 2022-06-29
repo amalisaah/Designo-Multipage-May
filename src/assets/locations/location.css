@@ -84,6 +84,10 @@ address {
     /* color: rgba(255, 255, 255, 0.5); */
     /* font-weight: bold; */
 }
+address p {
+    margin: 0;
+    padding: 0;
+}
 .project {
     background-color: #E7816B;
     width: 87.66%;
