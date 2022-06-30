@@ -223,6 +223,14 @@ button {
 button a {
     color: inherit;
 }
+nav li:hover {
+    text-decoration: underline;
+}
+button:hover {
+    color: #fff;
+    background-color: #ffad9b;
+    transition: all 0.4s ease;
+}
 /*small screen Project BREAKING POINT*/
 @media only screen and (min-width: 275px){
     .project_text {
