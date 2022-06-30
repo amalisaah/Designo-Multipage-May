@@ -44,11 +44,17 @@ nav a {
     height: 20px;
     width: 24px;
 }
-/* main,address {
-    display: flex;
-    flex-direction: column;
-
-} */
+nav li:hover {
+    text-decoration: underline;
+}
+button a {
+    color: inherit;
+}
+button:hover {
+    color: #fff;
+    background-color: #ffad9b;
+    transition: all 0.4s ease;
+}
 .address {
     display: flex;
     flex-direction: column-reverse;
@@ -123,10 +129,7 @@ address p {
     font-size: 32px;
     margin-bottom: 0px;
 }
-.project button {
-    background-color: #FFFFFF;
-    color: #333136;
-}
+
 footer {
     width: 100%; 
     overflow: hidden; 
@@ -189,8 +192,8 @@ address a {
     display: inline;
 }
 button {
-    background-color: #E7816B;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #333136;
     width: 152px;
     height: 56px;
     font-weight: bold;
