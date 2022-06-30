@@ -35,6 +35,10 @@ email address&quot;
 
 ### Screenshot
 
+<img src=".\src\assets\screenshots\Mobile_View.png">
+<img src=".\src\assets\screenshots\Tablet_View.png">
+<img src=".\src\assets\screenshots\Desktop_View.png">
+
 ### Links
 
 - Solution URL: [link to github repo](https://github.com/AmaliTech-Training-Academy/Designo-Multipage-May-)
@@ -66,7 +70,9 @@ most of the format we used in building this site.
 ## Author
 
 - [Asiedu Saah](https://github.com/amalisaah)
-- [Matthew Brannsford]((https://github.com/eternitycodes)
+- [Matthew Brannsford](https://github.com/eternitycodes)
+- [Francis Morkeh Mensah](https://github.com/francismorkeh)
+- [Adizatu Seidu Karfo](https://github.com/sadizatu)
 
 ## Acknowledgments
 We will like to thank ourselves for our dedication and Amalitech for giving us this opportunity
